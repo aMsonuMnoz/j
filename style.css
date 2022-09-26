@@ -1,10 +1,52 @@
+body{
+	background-image: url(images/NicePictureBlur.JPG);
+	text-align: center;
+}
 #Overlord{
 	position: relative;
-	height: 100%;
-	width: 100%;
-	background-color: red;
+	
+	/* Set height to device height. */
+	height: 100vh;
+	
+	/* Background image (unblurred) centering and cropping */
+	background-image: url(images/NicePicture.jpeg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	/* Center div */
+	padding: 0%;
+	z-index: 0;
+
 }
-.Pasture{
-	object-fit: scale-down;
-	height: 500px;
+#Computer{
+	position: relative;
+	top: 3%;
+	margin: auto;
+	width: 100%;	
+	max-width:500px;
+	z-index: 1;
+}
+
+/* Need to find some way to contain all of the link buttons inside
+a single div that is the size of the Computer. */
+/* The shadow is combined with computer3.png now, as it always
+should have been.
+	#Shadow{ 
+	position: relative;
+	display: block;
+	top: 35vh;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-width:500px;
+} */
+
+#Title{
+	position: relative;
+	display: block;
+	top: 1vh;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-width:500px;	
 }
