@@ -3,7 +3,6 @@ body{
 	text-align: center;
 }
 #Overlord{
-	position: relative;
 	
 	/* Set height to device height. */
 	height: 100vh;
@@ -17,14 +16,6 @@ body{
 	padding: 0%;
 	z-index: 0;
 
-}
-#Computer{
-	position: relative;
-	top: 3%;
-	margin: auto;
-	width: 100%;	
-	max-width:500px;
-	z-index: 1;
 }
 
 /* Need to find some way to contain all of the link buttons inside
@@ -44,9 +35,105 @@ should have been.
 #Title{
 	position: relative;
 	display: block;
-	top: 1vh;
+	top: 5vh;
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
-	max-width:500px;	
+	max-width:400px;	
+}
+
+
+/* All elements inside this div are positioned absolutely (except computer)
+and fit inside the computer. Just change the width, left, and top
+values to get precise position. Use percentages. Going into chrome
+inspector is a fast way of getting exact values. */
+#Interface{
+	position: relative;
+	top: 9vh;
+	width: auto;
+	display: inline-block;
+}
+
+#Computer{
+	position: relative;
+	top: 3%;
+	margin: auto;
+	width: 100%;	
+	max-width:350px;
+	z-index: 1;
+}
+
+#Buttons{
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    width: 75%;
+    left: 12%;
+    top: 20%;
+    z-index: 2;
+}
+
+#OKAY{
+	display: inline-block;
+    position: absolute;
+    width: 19%;
+    left: 14%;
+    top: 29%;
+    z-index: 1;
+}
+#Static{
+    display: inline-block;
+    position: absolute;
+    width: 11.9%;
+    left: 46.6%;
+    top: 52%;
+    z-index: 1;
+}
+
+/* Container for Listen Links */
+#Listen{
+	left: 12.8%;
+    top: 20.3%;
+    width: 73.3%;
+    height: 20.5%;
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+}
+
+/*Makes buttons transparent and sets button size */
+.Transparent{
+	background: transparent;
+    border: none;
+    color: transparent;
+    width: 32%;
+    height: 45%;
+}
+
+/* The following id's affect the position of each button */
+#Spotify{position: absolute; top: 0%; left: 0%;}
+#Apple{position: absolute; top: 0%; left: 34%;}
+#Youtube{position: absolute; top: 0%; left: 67.7%;}
+#Tidal{position: absolute; top: 55%; left: 16.1%;}
+#Bandcamp{position: absolute; top: 55%; left: 50%;}
+
+
+#Socials{
+	left: 14%;
+    top: 50%;
+    width: 14%;
+    height: 20.5%;
+    display: block;
+    position: absolute;
+    z-index: 3;
+}
+
+a:link{
+	color: #3366CC;
+}
+a:hover{
+	color: #0645AD;
+}
+a:visited{
+	color: #0645AD;
 }
