@@ -133,12 +133,12 @@ inspector is a fast way of getting exact values. */
 #Socials{
 	position: absolute;
 	left: 14%;
-    top: 56%;
-    width: 14%;
-
-    display: block;
-    z-index: 8;
+	top: 56%;
+	width: 14%;
+	display: block;
+	z-index: 8;
 	font-size:4.5vw; /*percentages don't work for fonts. use vw*/
+	font-style: italic;
 }
 
 a:link{
@@ -150,3 +150,43 @@ a:hover{
 a:visited{
 	color: #0645AD;
 }
+
+@media screen and (min-width: 500px) {
+	#Socials{
+		position: absolute;
+		left: 14%;
+		top: 56%;
+		width: 14%;
+		display: block;
+		z-index: 8;
+		font-size:22.5px; /* max-width of computer is 500px, 500*0.045=22.5px */
+		font-style: italic;
+	}
+  }
+
+  @media screen and (min-aspect-ratio: 2/3) and (max-width: 500px) {
+	#Socials{
+		position: absolute;
+		left: 10%;
+		top: 51%;
+		width: 76vw;
+		display: block;
+		z-index: 8;
+		font-size:4.5vw; /* max-width of computer is 500px, 500*0.045=22.5px */
+		font-style: italic;
+	}
+  }
+
+  @media screen and (min-aspect-ratio: 2/3) and (min-width: 500px) {
+	#Socials{
+		position: absolute;
+		left: 10%;
+		top: 51%;
+		width: 385px; /*max width of computer is 500px, 500*0.76=385px
+		display: block;
+		z-index: 8;
+		font-size:22.5px; /* max-width of computer is 500px, 500*0.045=22.5px */
+		font-style: italic;
+		margin: auto;
+	}
+  }
