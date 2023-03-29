@@ -1,5 +1,0 @@
-To debug fluidly, launch an instance of Microsoft Edge Dev Tools Browser by going the the activity bar tab (logo)
-and clicking "launch instance." Go to explorer tab, right click index.html, copy path. Paste in the edge search bar. 
-Right click. Inspect.
-
-"Headless" needs to be unchecked in the MEDT Settings.
