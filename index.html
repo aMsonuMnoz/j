@@ -2,6 +2,7 @@
 <html lang="en">
 
 	<head>
+		<!--Created by Mason Munoz-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 		<meta name="author" content="Mason Müñoz">
@@ -12,6 +13,8 @@
 		<link rel="stylesheet" href="crt-effect.css">
 		<link rel="shortcut icon" type="image/jpg" href="images/Favicon.png"/>
 		<title>sweetfighter.net</title>
+
+		<!--image randomizer-->
 		<script type="text/javascript">
 			var imageURLs = [
 				 "images/Scene1.png"
@@ -24,23 +27,24 @@
 			  var img = '<img id="Computer" src=\"';
 			  var randomIndex = Math.floor(Math.random() * imageURLs.length);
 			  img += imageURLs[randomIndex];
-			  img += '\" alt=\"Some alt text\"/>';
+			  img += '\" alt=\"Yet another mysterious transmission from unknown origin.\"/>';
 			  return img;
 			}
 		  </script>
 	</head>
+
 	<body>
 			<div id="Overlord">
-				<!--<div id="overlay" class="crt"></div>-->
+				<div id="header" class="marquee"><p>Sweet Fighter's newest single "Dialogue" out NOW on all platforms.</p></div>
 				<img id="Title" src="images/Title2.gif">
 				<div id="Interface">
-					<div id="overlay2" class="crt"></div>
+					<div id="overlay2" class="crt"></div>  
 					<script type="text/javascript">
 						document.write(getImageTag());
 					</script>
 					<img id="Buttons" src="images/Buttons.svg">
 					<img id="OKAY" src="images/OKAY.gif">
-					<!--<img id="Static" src="images/static.GIF"> -->
+					<img id="Cover" src="images/Dialogue_Cover.PNG">
 					<div id="Listen">
 						<a href="https://open.spotify.com/album/2bl6raEE3qvpehs6fJWmqP?si=l6yRoX0_SHeTCxnKN2NmQg">
 							<button class="Transparent" id="Spotify" type="button">Click Me</button>
@@ -64,6 +68,8 @@
 						<a href="https://twitter.com/sweetfightertx">Twitter</a>
 						<a href="https://www.twitch.tv/sweetfightertx">Twitch</a>
 					</div>
+					<div id="Shadow"></div>
+					
 
 				</div>
 			</div>

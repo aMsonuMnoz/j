@@ -1,5 +1,5 @@
 body{
-	background-color: black;
+	background-color: blue;
 	text-align: center;
 }
 #Overlord{
@@ -9,38 +9,12 @@ body{
 	position: relative;
 	/* Background image (unblurred) centering and cropping */
 	background-color: blue;
-	background-position: center center;
-	background-repeat: no-repeat;
 	
 	/* Center div */
 	padding: 0%;
 	z-index: 0;
 
 }
-
-/* CRT Overlay that goes between the title and the computer, fit to the screen size Overlord id */
-#overlay {
-    position:absolute;
-    top:0; bottom:0; left:0; right:0;
-    display:block;
-    z-index:2;
-    background:transparent;
-
-}
-
-/* Need to find some way to contain all of the link buttons inside
-a single div that is the size of the Computer. */
-/* The shadow is combined with computer3.png now, as it always
-should have been.
-	#Shadow{ 
-	position: relative;
-	display: block;
-	top: 35vh;
-	margin-right: auto;
-	margin-left: auto;
-	width: 100%;
-	max-width:500px;
-} */
 
 #Title{
 	position: relative;
@@ -82,6 +56,21 @@ inspector is a fast way of getting exact values. */
 	z-index: 5;
 }
 
+#Shadow{
+	position: absolute;
+	left: 1%;
+	top: 75%;
+	margin: auto;
+	width: 98%;	
+	max-width:490px;
+	height: 29%;
+	background-color: black;
+	filter: blur(4px);
+	z-index: 1;
+	opacity: 80%;
+}
+
+
 #Buttons{
     display: inline-block;
     position: absolute;
@@ -94,13 +83,13 @@ inspector is a fast way of getting exact values. */
 
  #OKAY{
 		display: inline-block;
-		    position: absolute;
-			    width: 21%;
-				    left: 11%;
-					    top: 58%;
-						    z-index: 5;
-							}
- }
+		position: absolute;
+		width: 21%;
+		left: 11%;
+		top: 58%;
+		z-index: 5;
+	}
+ 
 
 
 /* Container for Listen Links */
@@ -121,7 +110,10 @@ inspector is a fast way of getting exact values. */
     color: transparent;
     width: 32%;
     height: 50%;
+	cursor: pointer;
+
 }
+
 
 /* The following id's affect the position of each button */
 #Spotify{position: absolute; top: 0%; left: 0%;}
@@ -140,6 +132,7 @@ inspector is a fast way of getting exact values. */
 	z-index: 8;
 	font-size:4.5vw; /*percentages don't work for fonts. use vw*/
 	font-style: italic;
+	text-shadow: 2px 2px black;
 }
 
 a:link{
@@ -151,6 +144,31 @@ a:hover{
 a:visited{
 	color: #0645AD;
 }
+
+#Cover{
+	display: inline-block;
+	position: absolute;
+	width: 21%;
+	left: 65%;
+	top: 57%;
+	z-index: 5;
+	animation: tilt linear 5s infinite;
+	box-shadow: 0 0 10px #222222;
+	}
+
+@keyframes tilt {
+	0%{
+		transform: skewY(10deg);
+	}
+	50%{
+		transform: skewY(-10deg);
+	}
+	100%{
+		transform: skewY(10deg);
+	}
+	
+}
+
 
 @media screen and (min-width: 500px) {
 	#Socials{
@@ -165,38 +183,62 @@ a:visited{
 	}
   }
 
-  @media screen and (min-aspect-ratio: 2/3) and (max-width: 500px) {
-	#Socials{
-		position: absolute;
-		left: 10%;
-		top: 51%;
-		width: 76vw;
-		display: block;
-		z-index: 8;
-		font-size:4.5vw; /* max-width of computer is 500px, 500*0.045=22.5px */
-		font-style: italic;
-	}
-  }
+  .marquee {
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+	background: #000000;
+	color: #ffff33;
+	border: 1px solid yellow;
+}
 
-  @media screen and (min-aspect-ratio: 2/3) and (min-width: 500px) {
-	#Socials{
-		position: absolute;
-		left: 10%;
-		top: 51%;
-		width: 385px; /*max width of computer is 500px, 500*0.76=385px
-		display: block;
-		z-index: 8;
-		font-size:22.5px; /* max-width of computer is 500px, 500*0.045=22.5px */
-		font-style: italic;
-		margin: auto;
-	}
+.marquee p {
+	position: absolute;
+	font-size: 15px;
+	width: 200%;
+	max-width:720px;
+	height: 15px;
+	margin: 0;
+	line-height: 20px;
+	text-align: center;
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-animation: scroll-left 2s linear infinite;
+	-webkit-animation: scroll-left 2s linear infinite;
+	animation: scroll-left 10s linear infinite;
+	font-family: monospace;
+}
 
-	 #OKAY{
-		display: inline-block;
-		position: absolute;
-		width: 15%;
-		left: 8%;
-		top: 70%;
-		z-index: 5;
+@-moz-keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(100%);
 	}
- }
+	100% {
+		-moz-transform: translateX(-100%);
+	}
+}
+
+@-webkit-keyframes scroll-left {
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+	}
+}
+
+@keyframes scroll-left {
+	0% {
+		-moz-transform: translateX(100%);
+		-webkit-transform: translateX(100%);
+		transform: translateX(100%);
+	}
+	100% {
+		-moz-transform: translateX(-100%);
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+}
+
+ 
