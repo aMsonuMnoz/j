@@ -56,21 +56,6 @@ inspector is a fast way of getting exact values. */
 	z-index: 5;
 }
 
-#Shadow{
-	position: absolute;
-	left: 1%;
-	top: 75%;
-	margin: auto;
-	width: 98%;	
-	max-width:490px;
-	height: 29%;
-	background-color: black;
-	filter: blur(4px);
-	z-index: 1;
-	opacity: 80%;
-}
-
-
 #Buttons{
     display: inline-block;
     position: absolute;
