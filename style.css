@@ -1,11 +1,14 @@
 body{
-	background-color: yellow;
 	text-align: center;
+	background-color:red;
+	overflow: hidden;
+	height: 98vh;
 }
 #Overlord{
 	
 	/* Set height to device height. */
-	height: 100vh;
+	height: 97vh;
+	/* overflow: hidden; */
 	position: relative;
 	/* Background image (unblurred) centering and cropping */
 	background-color: mediumblue;
@@ -13,7 +16,9 @@ body{
 	/* Center div */
 	padding: 0%;
 	z-index: 0;
-
+	border-style:ridge;
+	border-color:lightgray;
+	border-radius: 10%;
 }
 
 #Title{
@@ -23,7 +28,7 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 	width: 100%;
-	max-width:400px;	
+	max-width:300px;	
 }
 
 
@@ -52,7 +57,7 @@ inspector is a fast way of getting exact values. */
 	top: 3%;
 	margin: auto;
 	width: 100%;	
-	max-width:500px;
+	max-width:400px;
 	z-index: 5;
 }
 
@@ -69,9 +74,9 @@ inspector is a fast way of getting exact values. */
  #OKAY{
 		display: inline-block;
 		position: absolute;
-		width: 21%;
-		left: 11%;
-		top: 58%;
+		width: 6%;
+		left: 0%;
+		top: 0%;
 		z-index: 5;
 	}
  
@@ -99,6 +104,12 @@ inspector is a fast way of getting exact values. */
 
 }
 
+.Transparent:hover{
+	transition: 0.2s ease-in;
+	background-color: blue;
+	opacity: 25%;
+}
+
 
 /* The following id's affect the position of each button */
 #Spotify{position: absolute; top: 0%; left: 0%;}
@@ -107,17 +118,48 @@ inspector is a fast way of getting exact values. */
 #Tidal{position: absolute; top: 65%; left: 16.1%;}
 #Bandcamp{position: absolute; top: 65%; left: 50%;}
 
+#Spotify:hover{	
+	transition: 0.2s ease-in;
+	background-color: green;
+	opacity: 25%;}
+#Apple:hover{	
+	transition: 0.2s ease-in;
+	background-color: blue;
+	opacity: 25%;}
+#Youtube:hover{	
+	transition: 0.2s ease-in;
+	background-color: red;
+	opacity: 25%;}
+#Tidal:hover{	
+	transition: 0.2s ease-in;
+	background-color: black;
+	opacity: 25%;}
+#Bandcamp:hover{	
+	transition: 0.2s ease-in;
+	background-color: skyblue;
+	opacity: 25%;}
+
 
 #Socials{
 	position: absolute;
 	left: 14%;
-	top: 52%;
-	width: 14%;
+	top: 50.5%;
+	width: 20%;
 	display: block;
 	z-index: 8;
-	font-size:4.5vw; /*percentages don't work for fonts. use vw*/
+	font-size:4.4vw; /*percentages don't work for fonts. use vw*/
 	font-style: italic;
 	text-shadow: 1px 1px black;
+	background-color: white;
+	text-align: left;
+	border-style:ridge;
+	border-color: lightgray;
+}
+
+#sociallink{
+	position: relative;
+	margin-left: 2%;
+	margin-bottom: 6%;
 }
 
 a:link{
@@ -136,7 +178,7 @@ a:visited{
 	width: 21%;
 	left: 65%;
 	top: 57%;
-	z-index: 5;
+	z-index: 7;
 	animation: tilt linear 5s infinite;
 	box-shadow: 0 0 10px #222222;
 	}
@@ -160,11 +202,23 @@ a:visited{
 		position: absolute;
 		left: 14%;
 		top: 52%;
-		width: 14%;
+		width: 19%;
 		display: block;
 		z-index: 8;
-		font-size:22.5px; /* max-width of computer is 500px, 500*0.045=22.5px */
+		font-size:22.0px; /* max-width of computer is 500px, 500*0.045=22.5px */
 		font-style: italic;
+		border-style:ridge;
+		margin-left: 1%
+	}
+
+	#Title{
+			position: relative;
+			display: block;
+			top: 5vh;
+			margin-right: auto;
+			margin-left: auto;
+			width: 100%;
+			max-width:200px;	
 	}
   }
 
@@ -174,7 +228,9 @@ a:visited{
 	position: relative;
 	background: #000000;
 	color: #ffff33;
-	border: 2px solid yellow;
+	border: 2px solid lightgray;
+	border-style: ridge;
+	top: 1%;
 }
 
 @font-face {
