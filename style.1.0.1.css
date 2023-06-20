@@ -176,6 +176,43 @@ a:visited{
 	
 }
 
+@media only screen and (min-width: 2000px){
+	body{
+		text-align: center;
+		background-color:red;
+		overflow: hidden;
+		height: 98vh;
+	}
+	#Overlord{
+		
+		/* Set height to device height. */
+		height: 97vh;
+		/* overflow: hidden; */
+		position: relative;
+		/* Background image (unblurred) centering and cropping */
+		background-color: mediumblue;
+		
+		/* Center div */
+		padding: 0%;
+		z-index: 0;
+		border-style:ridge;
+		border-color:lightgray;
+		border-radius: 10%;
+		border-width: thick;
+	}
+	.marquee {
+		height: 20px;
+		overflow: hidden;
+		position: relative;
+		background: #000000;
+		color: #ffff33;
+		border: 2px solid lightgray;
+		border-style: ridge;
+		top: 1%;
+		border-width: thick;
+	}
+}
+
 @media only screen and (max-aspect-ratio: 0.625) {
 
 	#Interface{
@@ -287,42 +324,7 @@ a:visited{
 	top: 1%;
 }
 
-@media only screen and (min-width: 2000px){
-	body{
-		text-align: center;
-		background-color:red;
-		overflow: hidden;
-		height: 98vh;
-	}
-	#Overlord{
-		
-		/* Set height to device height. */
-		height: 97vh;
-		/* overflow: hidden; */
-		position: relative;
-		/* Background image (unblurred) centering and cropping */
-		background-color: mediumblue;
-		
-		/* Center div */
-		padding: 0%;
-		z-index: 0;
-		border-style:ridge;
-		border-color:lightgray;
-		border-radius: 10%;
-		border-width: thick;
-	}
-	.marquee {
-		height: 20px;
-		overflow: hidden;
-		position: relative;
-		background: #000000;
-		color: #ffff33;
-		border: 2px solid lightgray;
-		border-style: ridge;
-		top: 1%;
-		border-width: thick;
-	}
-}
+
 
 /* When aspect is less than 0.625 */
 #Computer{
