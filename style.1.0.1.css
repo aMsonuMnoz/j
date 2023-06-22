@@ -7,7 +7,7 @@ body{
 #Overlord{
 	
 	/* Set height to device height. */
-	height: 97vh;
+	height: 92vh;
 	/* overflow: hidden; */
 	position: relative;
 	/* Background image (unblurred) centering and cropping */
@@ -127,7 +127,7 @@ inspector is a fast way of getting exact values. */
 	width: 20%;
 	display: block;
 	z-index: 8;
-	font-size:4.4vw; /*percentages don't work for fonts. use vw*/
+	font-size:3.8vw; /*percentages don't work for fonts. use vw*/
 	font-style: italic;
 	text-shadow: 1px 1px black;
 	background-color: white;
@@ -207,20 +207,6 @@ a:visited{
 	/* max-width:200px;	 */
 }
 
-
-/*When aspect is less than 0.625 */
-#Socials{
-	position: absolute;
-	left: 14%;
-	top: 52%;
-	width: 19%;
-	display: block;
-	z-index: 8;
-	font-size:78%; /* max-width of computer is 500px, 500*0.045=22.5px */
-	font-style: italic;
-	border-style:ridge;
-	margin-left: 1%
-}
 
 #overlay2 {
 	position:absolute;
