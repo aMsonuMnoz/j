@@ -2,12 +2,13 @@ body{
 	text-align: center;
 	background-color:red;
 	overflow: hidden;
-	height: 98vh;
+	height: 98%;
+	position: fixed;
 }
 #Overlord{
 	
 	/* Set height to device height. */
-	height: 92vh;
+	height: 99%;
 	/* overflow: hidden; */
 	position: relative;
 	/* Background image (unblurred) centering and cropping */
@@ -306,6 +307,14 @@ a:visited{
 }
 
 @media only screen and (min-aspect-ratio: 5/8) {
+
+	body{
+		text-align: center;
+		background-color:red;
+		overflow: hidden;
+		height: 98vh;
+		position: relative;
+	}
 
 	#Interface{
 		position: relative;
