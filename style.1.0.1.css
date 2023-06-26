@@ -128,7 +128,7 @@ inspector is a fast way of getting exact values. */
 	width: 20%;
 	display: block;
 	z-index: 8;
-	font-size:3.8vw; /*percentages don't work for fonts. use vw*/
+	font-size:3.6vw; /*percentages don't work for fonts. use vw*/
 	font-style: italic;
 	text-shadow: 1px 1px black;
 	background-color: white;
