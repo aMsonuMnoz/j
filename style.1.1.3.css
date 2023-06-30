@@ -1,6 +1,6 @@
 body{
 	text-align: center;
-	background-color:red;
+	background-color:crimson;
 	overflow: hidden;
 	height: 98%;
 	position: fixed;
@@ -8,18 +8,19 @@ body{
 #Overlord{
 	
 	/* Set height to device height. */
-	height: 99%;
+	height: 97%;
 	/* overflow: hidden; */
 	position: relative;
 	/* Background image (unblurred) centering and cropping */
-	background-color: mediumblue;
+	background-color: #B2BEB5;
 	
 	/* Center div */
 	padding: 0%;
 	z-index: 0;
 	border-style:ridge;
-	border-color:lightgray;
-	border-radius: 10%;
+	border-color:darkgray;
+	border-width: 0.3em;
+	border-radius: 5%;
 }
 
 /* #Title{
@@ -221,7 +222,7 @@ a:visited{
 @media only screen and (min-width: 2000px){
 	body{
 		text-align: center;
-		background-color:red;
+		background-color:crimson;
 		overflow: hidden;
 		height: 98vh;
 	}
@@ -248,7 +249,7 @@ a:visited{
 		position: relative;
 		background: #000000;
 		color: #ffff33;
-		border: 2px solid lightgray;
+		border: 2px solid gray;
 		border-style: ridge;
 		top: 1%;
 		border-width: thick;
@@ -310,7 +311,7 @@ a:visited{
 
 	body{
 		text-align: center;
-		background-color:red;
+		background-color:crimson;
 		overflow: hidden;
 		height: 98vh;
 		position: relative;
@@ -375,7 +376,7 @@ a:visited{
 	position: relative;
 	background: #000000;
 	color: #ffff33;
-	border: 2px solid lightgray;
+	border: .2em solid darkgray;
 	border-style: ridge;
 	top: 1%;
 }
