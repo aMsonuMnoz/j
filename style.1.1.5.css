@@ -9,10 +9,10 @@ body{
 	
 	/* Set height to device height. */
 	height: 97%;
+	width: auto;
 	/* overflow: hidden; */
 	position: relative;
 	background-color: #B2BEB5;
-	
 	padding: 0%;
 	z-index: 0;
 	border-style:ridge;
