@@ -9,8 +9,8 @@ body{
 	
 	/* Set height to device height. */
 	height: 97%;
-	width: auto;
-	/* overflow: hidden; */
+	left: 0.6%;
+	right: 0.6%;
 	position: relative;
 	background-color: #B2BEB5;
 	padding: 0%;
@@ -170,7 +170,7 @@ a:visited{
 #Interface{
 	position: relative;
 	top: 9vh;
-	width: 89vw;
+	width: 93%;
 	display: inline-block;
 	height: auto;
 	font-size: 100%;
