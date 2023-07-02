@@ -318,8 +318,7 @@ a:visited{
 .marquee p {
 	position: absolute;
 	font-size: 15px;
-	width: auto;
-	max-width:720px;
+	width: 28em;
 	height: 15px;
 	margin: 0;
 	line-height: 20px;
