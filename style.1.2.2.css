@@ -104,16 +104,17 @@ body{
 	position: absolute;
 	left: 14%;
 	top: 50.5%;
+	bottom: 12.5%;
 	width: 20%;
 	display: block;
 	z-index: 8;
 	font-size:3.6vw; /*percentages don't work for fonts. use vw*/
 	font-style: italic;
 	text-shadow: 1px 1px black;
-	background-color: white;
+	background-color:#B2BEB5;
 	text-align: left;
-	border-style:ridge;
-	border-color: lightgray;
+	border-style:inset;
+	border-color: #3366CC;
 }
 
 #sociallink{
@@ -269,12 +270,13 @@ a:visited{
 		position: absolute;
 		left: 14%;
 		top: 53%;
+		bottom: 12.5%;
 		width: 12vh;
 		display: block;
 		z-index: 8;
 		font-size:2.6vh; /*more than 0.625, font based on height*/
 		font-style: italic;
-		border-style:ridge;
+		border-style:inset;
 		margin-left: 1%
 	}
 
