@@ -102,9 +102,9 @@ body{
 
 #Socials{
 	position: absolute;
-	left: 14%;
-	top: 51%;
-	bottom: 20%;
+	left: 13%;
+	top: 55%;
+	bottom: 17%;
 	width: 20%;
 	display: block;
 	z-index: 8;
@@ -114,7 +114,7 @@ body{
 	background-color:#B2BEB5;
 	text-align: left;
 	border-style:inset;
-	border-color: #3366CC;
+	border-color: black;
 	border-width: medium;
 }
 
