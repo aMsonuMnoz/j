@@ -111,7 +111,7 @@ body{
 	font-size:82%; /*percentages don't work for fonts. use vw*/
 	font-style: italic;
 	text-shadow: 1px 1px black;
-	background-color:#B2BEB5;
+	background-color:crimson;
 	text-align: left;
 	border-style:inset;
 	border-color: black;
