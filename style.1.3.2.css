@@ -1,3 +1,5 @@
+/*-----------------------MAJOR DIVS*/
+/*crimson*/
 body{
 	text-align: center;
 	background-color:crimson;
@@ -5,8 +7,9 @@ body{
 	height: 98%;
 	position: fixed;
 }
+
+/*grey*/
 #Overlord{
-	
 	/* Set height to device height. */
 	height: 97%;
 	left: 0.6%;
@@ -20,15 +23,66 @@ body{
 	border-radius: 5%;
 }
 
+#Interface{
+	position: relative;
+	top: 9vh;
+	width: 94.5%;
+	display: inline-block;
+	height: auto;
+	font-size: 100%;
 
-#Buttons{
-    display: inline-block;
-    position: absolute;
-    margin: auto;
-    width: 75%;
-    left: 12%;
-    top: 24%;
-    z-index: 7;
+}
+
+
+
+
+
+/*-----------------------OUTSIDE OF INTERFACE*/
+/*When aspect is less than 0.625 */
+#Title{
+	position: relative;
+	display: block;
+	top: 5vh;
+	margin-right: auto;
+	margin-left: auto;
+	width: 75%;
+	/* max-width:200px;	 */
+}
+
+
+
+/* Marquee */
+.marquee {
+	height: 20px;
+	overflow: hidden;
+	position: relative;
+	background: #000000;
+	color: #ffff33;
+	border: .2em solid darkgray;
+	border-style: ridge;
+	top: 1%;
+}
+
+@font-face {
+	font-family: myFirstFont;
+	src: url(fonts/W95FA.otf);
+  }
+
+.marquee p {
+	position: absolute;
+	font-size: 15px;
+	width: 28em;
+	height: 15px;
+	margin: 0;
+	line-height: 20px;
+	text-align: center;
+	-moz-transform: translateX(100%);
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-moz-animation: scroll-left 2s linear infinite;
+	-webkit-animation: scroll-left 2s linear infinite;
+	animation: scroll-left 10s linear infinite;
+	font-family: myFirstFont;
 }
 
 #OKAY{
@@ -39,66 +93,31 @@ body{
 	top: 0%;
 	z-index: 5;
 }
- 
 
 
-/* Container for Listen Links */
-#Listen{
-	left: 12.8%;
-    top: 24.4%;
-    width: 73.3%;
-    height: 20.5%;
-    display: inline-block;
-    position: absolute;
-    z-index: 8;
+
+
+
+/*-----------------------INTERFACE ITEMS*/
+
+/* When aspect is less than 0.625 */
+#Computer{
+	position: relative;
+	top: 3%;
+	margin: auto;
+    width: 100%;	
+	/* max-width:500px; */
+	z-index: 5;
 }
 
-/*Makes buttons transparent and sets button size */
-.Transparent{
-	background: transparent;
-    border: none;
-    color: transparent;
-    width: 32%;
-    height: 50%;
-	cursor: pointer;
-
+/*CRT Overlay*/
+#overlay2 {
+	position:absolute;
+	top:17%; bottom:12%; left:10%; right:10%;
+	display:block;
+	z-index:6;
+	background:transparent;
 }
-
-.Transparent:hover{
-	transition: 0.2s ease-in;
-	background-color: blue;
-	opacity: 25%;
-}
-
-
-/* The following id's affect the position of each button */
-#Spotify{position: absolute; top: 0%; left: 0%;}
-#Apple{position: absolute; top: 0%; left: 34%;}
-#Youtube{position: absolute; top: 0%; left: 67.7%;}
-#Tidal{position: absolute; top: 65%; left: 16.1%;}
-#Bandcamp{position: absolute; top: 65%; left: 50%;}
-
-#Spotify:hover{	
-	transition: 0.2s ease-in;
-	background-color: green;
-	opacity: 25%;}
-#Apple:hover{	
-	transition: 0.2s ease-in;
-	background-color: blue;
-	opacity: 25%;}
-#Youtube:hover{	
-	transition: 0.2s ease-in;
-	background-color: red;
-	opacity: 25%;}
-#Tidal:hover{	
-	transition: 0.2s ease-in;
-	background-color: black;
-	opacity: 25%;}
-#Bandcamp:hover{	
-	transition: 0.2s ease-in;
-	background-color: skyblue;
-	opacity: 25%;}
-
 
 #Socials{
 	position: absolute;
@@ -118,19 +137,50 @@ body{
 	border-width: medium;
 }
 
+/*Buttons svg */
+#Buttons{
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    width: 75%;
+    left: 12%;
+    top: 24%;
+    z-index: 7;
+}
+
+/* Container for html buttons */
+#Listen{
+	left: 12.8%;
+    top: 24.4%;
+    width: 73.3%;
+    height: 20.5%;
+    display: inline-block;
+    position: absolute;
+    z-index: 8;
+}
+
+/*html button, sets style of all button anchors*/
+.Transparent{
+	background: transparent;
+    border: none;
+    color: transparent;
+    width: 32%;
+    height: 50%;
+	cursor: pointer;
+
+}
+
+/* The following id's affect the position of each button */
+#Spotify{position: absolute; top: 0%; left: 0%;}
+#Apple{position: absolute; top: 0%; left: 34%;}
+#Youtube{position: absolute; top: 0%; left: 67.7%;}
+#Tidal{position: absolute; top: 65%; left: 16.1%;}
+#Bandcamp{position: absolute; top: 65%; left: 50%;}
+
+
 #sociallink{
 	position: relative;
 	margin-left: 2%;
-}
-
-a:link{
-	color: #3366CC;
-}
-a:hover{
-	color: #0645AD;
-}
-a:visited{
-	color: #0645AD;
 }
 
 #Cover{
@@ -144,6 +194,7 @@ a:visited{
 	box-shadow: 0 0 10px #222222;
 	}
 
+/*Cover animation*/
 @keyframes tilt {
 	0%{
 		transform: skewY(10deg);
@@ -157,47 +208,13 @@ a:visited{
 	
 }
 
-/* When aspect is less than 0.625 */
-#Computer{
-	position: relative;
-	top: 3%;
-	margin: auto;
-    width: 100%;	
-	/* max-width:500px; */
-	z-index: 5;
-}
-
-#Interface{
-	position: relative;
-	top: 9vh;
-	width: 94.5%;
-	display: inline-block;
-	height: auto;
-	font-size: 100%;
-
-}
-
-/*When aspect is less than 0.625 */
-#Title{
-	position: relative;
-	display: block;
-	top: 5vh;
-	margin-right: auto;
-	margin-left: auto;
-	width: 75%;
-	/* max-width:200px;	 */
-}
 
 
-#overlay2 {
-	position:absolute;
-	top:17%; bottom:12%; left:10%; right:10%;
-	display:block;
-	z-index:6;
-	background:transparent;
 
-}
 
+
+
+/*-----------------------MEDIA QUERIES*/
 @media only screen and (min-width: 2000px){
 	body{
 		text-align: center;
@@ -295,47 +312,13 @@ a:visited{
 		display:block;
 		z-index:6;
 		background:transparent;
-	
 	}
 }
 
-.marquee {
-	height: 20px;
-	overflow: hidden;
-	position: relative;
-	background: #000000;
-	color: #ffff33;
-	border: .2em solid darkgray;
-	border-style: ridge;
-	top: 1%;
-}
 
 
 
-@font-face {
-	font-family: myFirstFont;
-	src: url(fonts/W95FA.otf);
-  }
-
-.marquee p {
-	position: absolute;
-	font-size: 15px;
-	width: 28em;
-	height: 15px;
-	margin: 0;
-	line-height: 20px;
-	text-align: center;
-	-moz-transform: translateX(100%);
-	-webkit-transform: translateX(100%);
-	transform: translateX(100%);
-	-moz-animation: scroll-left 2s linear infinite;
-	-webkit-animation: scroll-left 2s linear infinite;
-	animation: scroll-left 10s linear infinite;
-	font-family: myFirstFont;
-}
-
-
-
+/* Marquee Animation */
 @-moz-keyframes scroll-left {
 	0% {
 		-moz-transform: translateX(200%);
@@ -367,6 +350,8 @@ a:visited{
 	}
 }
 
+
+/*Temporary Refresh Fix*/
 #Refresh{
 	position: absolute;
 	z-index: -50;
@@ -374,5 +359,39 @@ a:visited{
 	right: 50%;
 	font-family: myFirstFont;
 	font-size: 5vh;
+}
+
+
+/*Listen links hover settings*/
+#Spotify:hover{	
+	transition: 0.2s ease-in;
+	background-color: green;
+	opacity: 25%;}
+#Apple:hover{	
+	transition: 0.2s ease-in;
+	background-color: blue;
+	opacity: 25%;}
+#Youtube:hover{	
+	transition: 0.2s ease-in;
+	background-color: red;
+	opacity: 25%;}
+#Tidal:hover{	
+	transition: 0.2s ease-in;
+	background-color: black;
+	opacity: 25%;}
+#Bandcamp:hover{	
+	transition: 0.2s ease-in;
+	background-color: skyblue;
+	opacity: 25%;}
+
+/*socials hover settings*/
+a:link{
+	color: #3366CC;
+}
+a:hover{
+	color: #0645AD;
+}
+a:visited{
+	color: #0645AD;
 }
  
