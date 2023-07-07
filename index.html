@@ -14,6 +14,10 @@
 		<link rel="shortcut icon" type="image/jpg" href="images/Favicon.webp"/>
 		<title>sweetfighter.net</title>
 
+		<!-- JQuery -->
+		<script src="jquery.js"></script>
+		<script src="jq.js"></script>
+
 		<!--image randomizer-->
 		<script type="text/javascript">
 			var imageURLs = [
@@ -35,42 +39,48 @@
 	</head>
 
 	<body>
-			<div id="Overlord">
-				<p id="Refresh">Refresh!</p>
-				<div id="header" class="marquee"><p>Listen to Sewn on all platforms and watch our new video on instagram <img alt="sunglasses cool guy" id="OKAY" src = "images/OKAY.webp"></p> </div>
-				<img id="Title" alt="globular title" src="images/globe2.webp">
-				<div id="Interface">
-					<div id="overlay2" class="crt"></div>  
-					<script type="text/javascript">
-						document.write(getImageTag());
-					</script>
-					<img id="Buttons" alt="links for listening" src="images/Buttons.svg">
-					<img id="Cover" alt="the cover for our new single" src="images/sewn.webp">
-					<div id="Listen">
-						<a href="https://open.spotify.com/track/79FCD5DM93Zt3JdUrwbvKc?si=7e41ebbc485a41be">
-							<button class="Transparent" id="Spotify" type="button">Click Me</button>
-						</a>
-						<a href="https://music.apple.com/us/album/sewn-single/1691009243">
-							<button class="Transparent" id="Apple" type="button">Click Me</button>
-						</a>
-						<a href="https://www.youtube.com/watch?v=D7ePWQc7sY8&ab_channel=SweetFighter-Topic">
-							<button class="Transparent" id="Youtube" type="button">Click Me</button>
-						</a>
-						<a href="https://tidal.com/browse/track/298329530">
-							<button class="Transparent" id="Tidal" type="button">Click Me</button>
-						</a>
-						<a href="https://sweetfighter.bandcamp.com/releases">
-							<button class="Transparent" id="Bandcamp" type="button">Click Me</button>
-						</a>
-					</div>
-					<div id="Socials">
-						<a id="sociallink" href="https://www.instagram.com/sweetfightertx/">Instagram</a><br>
-						<a id="sociallink" href="https://tinyurl.com/2qnx4oba">Bopdrop</a><br>
-						<a id="sociallink" href="https://discord.gg/wHJC9N3">Discord</a><br>
-						<a id="sociallink" href="https://twitter.com/sweetfightertx">Twitter</a><br>
-						<a id="sociallink" href="https://www.twitch.tv/sweetfightertx">Twitch</a><br>
-					</div>
+		<div id="Overlord">
+			<p id="Refresh">Refresh!</p>
+			<div id="header" class="marquee"><p>Listen to Sewn on all platforms and watch our new video on instagram <img alt="sunglasses cool guy" id="OKAY" src = "images/OKAY.webp"></p> </div>
+			<img id="Title" alt="globular title" src="images/globe2.webp">
+			<div id="Interface">
+				<div id="overlay2" class="crt"></div>  
+				<script type="text/javascript">
+					document.write(getImageTag());
+				</script>
+				<img id="Buttons" alt="links for listening" src="images/Buttons.svg">
+				<img id="Cover" alt="the cover for our new single" src="images/sewn.webp">
+				<div id="Listen">
+					<a href="https://open.spotify.com/track/79FCD5DM93Zt3JdUrwbvKc?si=7e41ebbc485a41be">
+						<button class="Transparent" id="Spotify" type="button">Click Me</button>
+					</a>
+					<a href="https://music.apple.com/us/album/sewn-single/1691009243">
+						<button class="Transparent" id="Apple" type="button">Click Me</button>
+					</a>
+					<a href="https://www.youtube.com/watch?v=D7ePWQc7sY8&ab_channel=SweetFighter-Topic">
+						<button class="Transparent" id="Youtube" type="button">Click Me</button>
+					</a>
+					<a href="https://tidal.com/browse/track/298329530">
+						<button class="Transparent" id="Tidal" type="button">Click Me</button>
+					</a>
+					<a href="https://sweetfighter.bandcamp.com/releases">
+						<button class="Transparent" id="Bandcamp" type="button">Click Me</button>
+					</a>
+				</div>
+				<div id="Socials">
+					<a id="sociallink" href="https://www.instagram.com/sweetfightertx/">Instagram</a><br>
+					<a id="sociallink" href="https://tinyurl.com/2qnx4oba">Bopdrop</a><br>
+					<a id="sociallink" href="https://discord.gg/wHJC9N3">Discord</a><br>
+					<a id="sociallink" href="https://twitter.com/sweetfightertx">Twitter</a><br>
+					<a id="sociallink" href="https://www.twitch.tv/sweetfightertx">Twitch</a><br>
 				</div>
 			</div>
+			
+			<div id = "Navigation">
+				<button id = "LinksInterface">Links</button>
+				<button id = "3dInterface">3D World</button>
+			</div>
+			
+		</div>
 	</body>
 </html>

@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "jquery": "^3.7.0",
+    "three": "^0.154.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.1"
+  }
+}
