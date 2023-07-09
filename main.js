@@ -7,7 +7,6 @@ const scene = new THREE.Scene();
 const light = new THREE.AmbientLight(0xcccccc);
 const directionalLight = new THREE.DirectionalLight( 0xffffff );
 directionalLight.position.set( 0, 1, 1 ).normalize();
-// scene.add( directionalLight );	
 light.position.set(0,5,5);
 scene.add(light);
 const canvas = document.querySelector(".webgl")
